@@ -1,0 +1,85 @@
+@charset "UTF-8";
+#productContainer {
+  background-color: #f1f0f0;
+}
+#productContainer .container {
+  width: 65vw;
+}
+#productContainer .container .col-lg-4 > div {
+  background-color: #fff;
+  position: sticky;
+  top: 64px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+  padding: 15px;
+}
+#productContainer .container .col-lg-4 > div ul {
+  padding: 0.8rem 1.2rem;
+}
+#productContainer .container .col-lg-4 > div li {
+  list-style: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#productContainer .container .col-lg-4 > div li::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #974537;
+  transform: translateX(-100%);
+  transition: 0.5s all linear;
+}
+#productContainer .container .col-lg-4 > div li a {
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  padding-left: 0;
+  outline: none;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid rgba(10, 70, 103, 0.25);
+}
+#productContainer .container .col-lg-4 > div li:hover a, #productContainer .container .col-lg-4 > div li:hover::before {
+  color: #c64526;
+  transform: translateX(0);
+}
+#productContainer .container .col-lg-8 .row .col-12 > h3 {
+  font-size: 21px;
+  font-weight: 900;
+}
+#productContainer .container .col-lg-8 .row .col-12 .box {
+  border-top: 2px solid #d3d2d2;
+  padding-top: 2rem;
+}
+#productContainer .container .col-lg-8 .row .col-12 .box h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+#productContainer .container .col-lg-8 .row .col-12 .box li {
+  list-style: none;
+  position: relative;
+  left: -15px;
+}
+#productContainer .container .col-lg-8 .row .col-12 .box li::before {
+  content: "•";
+  color: #c64526;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+#productContainer .container .col-lg-8 .row .col-12 .box li:hover::before {
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 1400px) {
+  #productContainer .container {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=ProductContentStyle.css.map */

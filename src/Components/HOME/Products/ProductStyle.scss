@@ -1,0 +1,198 @@
+@import '../../Variables';
+
+section#Product {
+    background-color: $productsBackground;
+    padding: 3rem 0;
+
+    .container {
+        // border: 3px solid red;
+        width: $normalContainerWidth;
+        margin-top: 5rem;
+
+        .row {
+            justify-content: space-between;
+
+            .cc {
+                // border: 2px solid blue;
+
+                h2,
+                h6 {
+                    font-weight: bold;
+                }
+
+                h6 {
+                    color: $maroon;
+                }
+
+                .ap {
+                    outline: none;
+                    text-decoration: none;
+                    color: $black;
+                    font-weight: 550;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: $maroon;
+                    }
+
+                    &::after {
+                        content: '\f054';
+                        font-family: "FontAwesome";
+                        margin-left: 1rem;
+                        color: $maroon;
+                        animation: move 1s linear infinite;
+                        position: relative;
+                    }
+
+                    @keyframes move {
+                        from {
+                            top: 0;
+                            left: 0;
+                        }
+
+                        to {
+                            top: 0;
+                            left: 1rem;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .row2 .carousel-inner .carousel-item {
+
+
+            img {
+                height: 60vh;
+            }
+
+            &:hover .carousel-caption {
+                height: 18rem;
+            }
+
+            .carousel-caption {
+                width: 420px;
+                background-color: $cardColor;
+                padding: 1.8rem;
+                height: 8rem;
+                transition: 0.5s;
+                overflow: hidden;
+                left: 0;
+                margin-left: 1.5rem;
+                border-radius: 3px;
+
+                h2 {
+                    color: $white;
+                    text-align: start;
+                }
+
+                .extra-field,
+                .font-sm {
+                    color: $gray;
+                    text-align: start;
+                }
+
+                .extra-field {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .font-sm {
+                    line-height: 19px;
+                }
+            }
+
+        }
+
+        a {
+            opacity: 1;
+
+            span:nth-of-type(1) {
+                background-color: $maroon;
+                border-radius: 50%;
+                width: 3rem;
+                height: 3rem;
+                margin: 1rem;
+                background-size: 1.5rem;
+                transition: 0.2s;
+                position: absolute;
+                bottom: 0;
+
+                &.carousel-control-prev-icon {
+                    right: 4rem;
+                }
+
+                &.carousel-control-next-icon {
+                    right: 0;
+                }
+
+                &:hover {
+                    width: 2.8rem;
+                    height: 2.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    section#Product .container {
+        width: $containerWidthfor1400px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    section#Product {
+        padding-bottom: 5rem;
+
+        .container .row2 {
+            a>span {
+                display: none;
+            }
+
+            .carousel-inner {
+                overflow: visible;
+
+                .carousel-item {
+                    height: 15rem;
+
+                    img {
+                        height: 100%;
+                    }
+
+                    &::before {
+                        content: "";
+                        background-color: #000;
+                        position: absolute;
+                        bottom: -4rem;
+                        left: 0;
+                        width: 100%;
+                        height: 28%;
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+
+                    &:hover::before {
+                        opacity: 1;
+                    }
+
+                    &:hover .carousel-caption {
+                        height: 17.8rem;
+                    }
+
+                    .carousel-caption {
+                        bottom: -3rem;
+                        margin-left: 0;
+                        height: 7.5rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 90%;
+                    }
+                }
+
+            }
+        }
+    }
+}

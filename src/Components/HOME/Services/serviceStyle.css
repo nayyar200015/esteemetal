@@ -1,0 +1,99 @@
+#serviceContainer {
+  background-color: transparent;
+  position: relative;
+  bottom: 5rem;
+  z-index: 1;
+  width: 65vw;
+}
+#serviceContainer .row .cc {
+  background-color: #fff;
+  height: 13rem;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s;
+}
+#serviceContainer .row .cc:nth-of-type(4) {
+  margin-right: 0;
+}
+#serviceContainer .row .cc:hover {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+#serviceContainer .row .cc svg {
+  position: relative;
+  top: 2rem;
+  left: 0.9rem;
+}
+#serviceContainer .row .cc h2 {
+  font-weight: 700;
+  line-height: 35px;
+  font-size: 20px;
+  margin: 0.9rem 4rem 0.9rem 0.9rem;
+  position: relative;
+  top: 4rem;
+}
+
+#container2 {
+  width: 65vw;
+}
+#container2 .row .carousel-item {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#container2 .row .carousel-item:hover > .carousel-caption {
+  transform: translateX(-234px);
+  transition: 0.4s;
+}
+#container2 .row .carousel-item:not(hover) > .carousel-caption {
+  transform: translateX(0);
+  transition: 0.4s;
+}
+#container2 .row .carousel-item .carousel-caption {
+  background-color: #231f20;
+  width: 14rem;
+  height: 3rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  right: -224px;
+  left: auto;
+}
+#container2 .row .carousel-item .carousel-caption h6 {
+  color: #fff;
+  font-size: 14px;
+}
+#container2 .row .div2 h6,
+#container2 .row .div2 h3 > span {
+  color: #c44527;
+  font-weight: bold;
+}
+#container2 .row .div2 h3 {
+  font-weight: bold;
+}
+#container2 .row .div2 button {
+  background-color: #c44527;
+}
+#container2 .row .div2 button a {
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+}
+#container2 .row .div2 button:hover {
+  background-color: #000;
+  transform: scale(0.95);
+  box-shadow: 0 12px 24px -10px rgba(21, 59, 93, 0.46);
+  transition: 1s;
+}
+#container2 .row .div2 button:hover a {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1400px) {
+  #serviceContainer,
+  #container2 {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  #serviceContainer {
+    position: initial;
+  }
+}/*# sourceMappingURL=serviceStyle.css.map */

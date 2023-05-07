@@ -1,0 +1,29 @@
+@import '../../Variables';
+@import '../../Mixin';
+
+form.row {
+
+    input,
+    textarea {
+        outline: none;
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        font-size: 14px;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid $maroon;
+
+        &::placeholder {
+            color: #a8c1cd;
+            font-weight: 600;
+        }
+
+        &:focus {
+            border-bottom: 1px solid $black;
+        }
+    }
+
+    button {
+        @include maroonButton;
+    }
+}

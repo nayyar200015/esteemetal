@@ -1,0 +1,90 @@
+@import '../../Variables';
+@import '../../Mixin';
+
+#contactForm {
+    background-color: $productsBackground;
+
+    .container {
+        width: $normalContainerWidth;
+
+        .row {
+            @include title;
+
+            &>div:nth-of-type(2)>div {
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+
+                h3 {
+                    font-size: 23px;
+                    font-weight: 900;
+                }
+
+                b {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                p {
+
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+                        padding: 4px;
+                        display: flex;
+                        padding: 0;
+
+                        hr {
+                            border: dotted $gray;
+                            background-color: transparent;
+                            border-top: none;
+                            margin-top: 15px;
+                            width: 95%;
+                        }
+
+                        a,
+                        p {
+                            // border: 2px solid greenyellow;
+                            margin: 0;
+                            text-align: end;
+                            text-decoration: none;
+                            outline: none;
+                            white-space: nowrap;
+                            word-break: keep-all;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #contactForm .container {
+        width: $containerWidthfor1400px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #contactForm .container .row>div:nth-of-type(2)>div ul {
+        li {
+            height: fit-content;
+            display: grid;
+            justify-items: start;
+            margin-bottom: 5px;
+
+            b {
+                margin-bottom: 5px;
+            }
+
+            hr {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import '../Variables';
+@import '../Mixin';
+
+#Inquiry {
+    background-color: $productsBackground;
+
+    .container {
+        @include title;
+        width: $normalContainerWidth;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #Inquiry .container {
+        width: $containerWidthfor1400px;
+    }
+}

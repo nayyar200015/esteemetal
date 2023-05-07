@@ -1,0 +1,16 @@
+@import '../../Variables';
+
+header {
+    height: 35vh;
+    display: flex;
+    align-items: center;
+
+    &>div {
+
+        h1 {
+            color: $white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
+}

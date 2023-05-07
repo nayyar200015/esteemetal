@@ -1,0 +1,44 @@
+@mixin redDots($font-weight) {
+    content: "•";
+    color: $maroon1;
+    font-weight: $font-weight;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+@mixin maroonButton {
+    background-color: $maroon;
+
+    a {
+        outline: none;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $black;
+        transform: scale(0.95);
+        box-shadow: 0 12px 24px -10px rgba(21, 59, 93, 0.46);
+        transition: 1s;
+
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@mixin title {
+    .title {
+        p {
+            color: $maroon;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 900;
+        }
+    }
+}

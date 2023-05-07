@@ -1,0 +1,77 @@
+#contactForm {
+  background-color: #f1f0f0;
+}
+#contactForm .container {
+  width: 65vw;
+}
+#contactForm .container .row .title p {
+  color: #c44527;
+  font-size: 14px;
+  font-weight: 700;
+}
+#contactForm .container .row .title h2 {
+  font-size: 28px;
+  font-weight: 900;
+}
+#contactForm .container .row > div:nth-of-type(2) > div {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+#contactForm .container .row > div:nth-of-type(2) > div h3 {
+  font-size: 23px;
+  font-weight: 900;
+}
+#contactForm .container .row > div:nth-of-type(2) > div b {
+  font-size: 14px;
+  font-weight: 700;
+}
+#contactForm .container .row > div:nth-of-type(2) > div p {
+  font-size: 14px;
+  font-weight: 500;
+}
+#contactForm .container .row > div:nth-of-type(2) > div ul {
+  padding: 0;
+}
+#contactForm .container .row > div:nth-of-type(2) > div ul li {
+  list-style: none;
+  padding: 4px;
+  display: flex;
+  padding: 0;
+}
+#contactForm .container .row > div:nth-of-type(2) > div ul li hr {
+  border: dotted #d3d2d2;
+  background-color: transparent;
+  border-top: none;
+  margin-top: 15px;
+  width: 95%;
+}
+#contactForm .container .row > div:nth-of-type(2) > div ul li a,
+#contactForm .container .row > div:nth-of-type(2) > div ul li p {
+  margin: 0;
+  text-align: end;
+  text-decoration: none;
+  outline: none;
+  white-space: nowrap;
+  word-break: keep-all;
+  color: black;
+}
+
+@media screen and (max-width: 1400px) {
+  #contactForm .container {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #contactForm .container .row > div:nth-of-type(2) > div ul li {
+    height: -moz-fit-content;
+    height: fit-content;
+    display: grid;
+    justify-items: start;
+    margin-bottom: 5px;
+  }
+  #contactForm .container .row > div:nth-of-type(2) > div ul li b {
+    margin-bottom: 5px;
+  }
+  #contactForm .container .row > div:nth-of-type(2) > div ul li hr {
+    display: none;
+  }
+}/*# sourceMappingURL=FormStyle.css.map */

@@ -1,0 +1,20 @@
+#carouselExampleFade {
+    // height: 95vh;
+
+    .carousel-inner .carousel-item {
+        max-height: 85vh;
+
+        img {
+            height: 100%;
+        }
+
+        .carousel-caption {
+            transform: translateY(-3rem);
+
+            h1 {
+                font-weight: bold;
+                filter: drop-shadow(0px 0px 0.25rem #000000);
+            }
+        }
+    }
+}

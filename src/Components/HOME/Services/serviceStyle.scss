@@ -1,0 +1,116 @@
+@import '../../Variables';
+@import '../../Mixin';
+
+#serviceContainer {
+    background-color: transparent;
+    position: relative;
+    bottom: 5rem;
+    z-index: 1;
+    width: $normalContainerWidth;
+    // border: 3px solid red;
+
+    .row {
+        // border: 2px solid red;
+
+        .cc {
+            // border: 2px solid green;
+            background-color: $white;
+            height: 13rem;
+            border-radius: 3px;
+            box-shadow: 0 1px 4px rgba($color: $black, $alpha: 0.15);
+            transition: all 0.5s;
+
+            &:nth-of-type(4) {
+                margin-right: 0;
+            }
+
+            &:hover {
+                box-shadow: 0 15px 15px rgba($color: $black, $alpha: 0.15);
+                transform: translateY(-8px);
+            }
+
+            svg {
+                position: relative;
+                top: 2rem;
+                left: 0.9rem;
+            }
+
+            h2 {
+                font-weight: 700;
+                line-height: 35px;
+                font-size: 20px;
+                margin: 0.9rem 4rem 0.9rem 0.9rem;
+                position: relative;
+                top: 4rem;
+            }
+        }
+    }
+}
+
+#container2 {
+    // border: 2px solid red;
+    width: $normalContainerWidth;
+
+    .row {
+        .carousel-item {
+            background-color: rgba($color: $black, $alpha: 0.8);
+
+            &:hover>.carousel-caption {
+                transform: translateX(-234px);
+                transition: 0.4s;
+            }
+
+            &:not(hover)>.carousel-caption {
+                transform: translateX(0);
+                transition: 0.4s;
+            }
+
+            .carousel-caption {
+                background-color: $cardColor;
+                width: 14rem;
+                height: 3rem;
+                padding-bottom: 2rem;
+                position: absolute;
+                right: -224px;
+                left: auto;
+
+                h6 {
+                    color: $white;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .div2 {
+            // border: 2px solid pink;
+
+            h6,
+            h3>span {
+                color: $maroon;
+                font-weight: bold;
+            }
+
+            h3 {
+                font-weight: bold;
+            }
+
+            button {
+                @include maroonButton;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+
+    #serviceContainer,
+    #container2 {
+        width: $containerWidthfor1400px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #serviceContainer {
+        position: initial;
+    }
+}

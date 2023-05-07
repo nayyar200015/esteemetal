@@ -1,0 +1,21 @@
+#Inquiry {
+  background-color: #f1f0f0;
+}
+#Inquiry .container {
+  width: 65vw;
+}
+#Inquiry .container .title p {
+  color: #c44527;
+  font-size: 14px;
+  font-weight: 700;
+}
+#Inquiry .container .title h2 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1400px) {
+  #Inquiry .container {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=SendInquiryStyle.css.map */

@@ -1,0 +1,90 @@
+.aboutContainer {
+  width: 65vw;
+}
+.aboutContainer:nth-of-type(2) {
+  margin: 7rem auto;
+}
+.aboutContainer p {
+  color: #231f20;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+}
+.aboutContainer p#aboutusheading {
+  color: #c64526;
+  font-weight: bold;
+  position: relative;
+  top: 1.6rem;
+  left: 3px;
+}
+.aboutContainer video {
+  width: 100%;
+}
+.aboutContainer .row #myAboutContent .row > div:first-child {
+  border-bottom: 0.5px solid #d3d2d2;
+}
+.aboutContainer .row #myAboutContent .row > div:first-child h3 {
+  color: #c64526;
+  font-weight: bold;
+  font-size: 20px;
+}
+.aboutContainer .row #myAboutContent .row > div:first-child p {
+  margin-top: 15px;
+}
+.aboutContainer .row #myAboutContent .row:nth-last-of-type(1) > div:first-child {
+  border-bottom: none;
+}
+.aboutContainer .row #myAboutContent .row .col-sm-4 {
+  position: relative;
+  top: -2px;
+  background: white;
+}
+.aboutContainer .row #myAboutContent .row .col-sm-4 img {
+  width: 7rem;
+}
+.aboutContainer .row #myAboutContent .flex-row-reverse > div:first-child {
+  border-left: 0.5px solid #d3d2d2;
+}
+.aboutContainer .row #myAboutContent :not(.flex-row-reverse) > div:first-child {
+  border-right: 0.5px solid #d3d2d2;
+}
+.aboutContainer .row .col-lg-3 a {
+  text-decoration: none;
+  color: #fff;
+}
+.aboutContainer .row .col-lg-3 a img {
+  width: 100%;
+}
+.aboutContainer .row .col-lg-3 a .caption {
+  bottom: 3.7rem;
+  position: relative;
+}
+.aboutContainer .row .col-lg-3 a .caption h2 {
+  font-size: 147%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .aboutContainer {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .aboutContainer .row #myAboutContent .row {
+    border: none;
+  }
+  .aboutContainer .row #myAboutContent .row > div:first-child {
+    border-bottom: none;
+  }
+  .aboutContainer .row #myAboutContent .flex-row-reverse > div:first-child {
+    border-left: none;
+  }
+  .aboutContainer .row #myAboutContent :not(.flex-row-reverse) > div:first-child {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .aboutContainer:nth-of-type(2) {
+    margin: 4rem auto;
+  }
+}/*# sourceMappingURL=AboutStyle.css.map */

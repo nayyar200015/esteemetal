@@ -1,0 +1,10 @@
+header {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+}
+header > div h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}/*# sourceMappingURL=HeaderStyle.css.map */

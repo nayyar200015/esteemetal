@@ -1,0 +1,152 @@
+section#Product {
+  background-color: #f1f0f0;
+  padding: 3rem 0;
+}
+section#Product .container {
+  width: 65vw;
+  margin-top: 5rem;
+}
+section#Product .container .row {
+  justify-content: space-between;
+}
+section#Product .container .row .cc h2,
+section#Product .container .row .cc h6 {
+  font-weight: bold;
+}
+section#Product .container .row .cc h6 {
+  color: #c44527;
+}
+section#Product .container .row .cc .ap {
+  outline: none;
+  text-decoration: none;
+  color: #000;
+  font-weight: 550;
+  transition: 0.4s;
+}
+section#Product .container .row .cc .ap:hover {
+  color: #c44527;
+}
+section#Product .container .row .cc .ap::after {
+  content: "\f054";
+  font-family: "FontAwesome";
+  margin-left: 1rem;
+  color: #c44527;
+  animation: move 1s linear infinite;
+  position: relative;
+}
+@keyframes move {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: 1rem;
+    opacity: 0;
+  }
+}
+section#Product .container .row2 .carousel-inner .carousel-item img {
+  height: 60vh;
+}
+section#Product .container .row2 .carousel-inner .carousel-item:hover .carousel-caption {
+  height: 18rem;
+}
+section#Product .container .row2 .carousel-inner .carousel-item .carousel-caption {
+  width: 420px;
+  background-color: #231f20;
+  padding: 1.8rem;
+  height: 8rem;
+  transition: 0.5s;
+  overflow: hidden;
+  left: 0;
+  margin-left: 1.5rem;
+  border-radius: 3px;
+}
+section#Product .container .row2 .carousel-inner .carousel-item .carousel-caption h2 {
+  color: #fff;
+  text-align: start;
+}
+section#Product .container .row2 .carousel-inner .carousel-item .carousel-caption .extra-field,
+section#Product .container .row2 .carousel-inner .carousel-item .carousel-caption .font-sm {
+  color: #d3d2d2;
+  text-align: start;
+}
+section#Product .container .row2 .carousel-inner .carousel-item .carousel-caption .extra-field {
+  font-size: 18px;
+  font-weight: 600;
+}
+section#Product .container .row2 .carousel-inner .carousel-item .carousel-caption .font-sm {
+  line-height: 19px;
+}
+section#Product .container a {
+  opacity: 1;
+}
+section#Product .container a span:nth-of-type(1) {
+  background-color: #c44527;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  background-size: 1.5rem;
+  transition: 0.2s;
+  position: absolute;
+  bottom: 0;
+}
+section#Product .container a span:nth-of-type(1).carousel-control-prev-icon {
+  right: 4rem;
+}
+section#Product .container a span:nth-of-type(1).carousel-control-next-icon {
+  right: 0;
+}
+section#Product .container a span:nth-of-type(1):hover {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+@media screen and (max-width: 1400px) {
+  section#Product .container {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#Product {
+    padding-bottom: 5rem;
+  }
+  section#Product .container .row2 a > span {
+    display: none;
+  }
+  section#Product .container .row2 .carousel-inner {
+    overflow: visible;
+  }
+  section#Product .container .row2 .carousel-inner .carousel-item {
+    height: 15rem;
+  }
+  section#Product .container .row2 .carousel-inner .carousel-item img {
+    height: 100%;
+  }
+  section#Product .container .row2 .carousel-inner .carousel-item::before {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    width: 100%;
+    height: 28%;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  section#Product .container .row2 .carousel-inner .carousel-item:hover::before {
+    opacity: 1;
+  }
+  section#Product .container .row2 .carousel-inner .carousel-item:hover .carousel-caption {
+    height: 17.8rem;
+  }
+  section#Product .container .row2 .carousel-inner .carousel-item .carousel-caption {
+    bottom: -3rem;
+    margin-left: 0;
+    height: 7.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+}/*# sourceMappingURL=ProductStyle.css.map */

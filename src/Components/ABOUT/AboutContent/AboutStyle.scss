@@ -1,0 +1,131 @@
+@import '../../Variables';
+
+.aboutContainer {
+    width: $normalContainerWidth;
+
+    &:nth-of-type(2) {
+        margin: 7rem auto;
+    }
+
+    p {
+        color: $cardColor;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+
+        &#aboutusheading {
+            color: $maroon1;
+            font-weight: bold;
+            position: relative;
+            top: 1.6rem;
+            left: 3px;
+        }
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .row {
+
+        // border: 2px solid green;
+        #myAboutContent {
+            .row {
+                &>div:first-child {
+                    border-bottom: 0.5px solid $gray;
+
+                    h3 {
+                        color: $maroon1;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                    }
+                }
+
+                &:nth-last-of-type(1)>div:first-child {
+                    border-bottom: none;
+                }
+
+                .col-sm-4 {
+                    position: relative;
+                    top: -2px;
+                    background: white;
+
+                    img {
+                        width: 7rem;
+                    }
+                }
+            }
+
+            .flex-row-reverse>div:first-child {
+                border-left: 0.5px solid $gray;
+            }
+
+            :not(.flex-row-reverse)>div:first-child {
+                border-right: 0.5px solid $gray;
+            }
+        }
+
+        .col-lg-3 {
+            a {
+                text-decoration: none;
+                color: $white;
+
+                img {
+                    width: 100%;
+                }
+
+
+                .caption {
+                    bottom: 3.7rem;
+                    position: relative;
+
+                    h2 {
+                        font-size: 147%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .aboutContainer {
+        width: $containerWidthfor1400px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .aboutContainer .row {
+        #myAboutContent {
+            .row {
+                border: none;
+
+                &>div:first-child {
+                    border-bottom: none;
+                }
+            }
+
+            .flex-row-reverse>div:first-child {
+                border-left: none;
+            }
+
+            :not(.flex-row-reverse)>div:first-child {
+                border-right: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .aboutContainer {
+
+        &:nth-of-type(2) {
+            margin: 4rem auto;
+        }
+    }
+}

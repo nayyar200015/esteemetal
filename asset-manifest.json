@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/esteemetal/static/css/main.8f1c17af.css",
+    "main.js": "/esteemetal/static/js/main.69627bd9.js",
+    "static/js/787.34beabac.chunk.js": "/esteemetal/static/js/787.34beabac.chunk.js",
+    "index.html": "/esteemetal/index.html",
+    "main.8f1c17af.css.map": "/esteemetal/static/css/main.8f1c17af.css.map",
+    "main.69627bd9.js.map": "/esteemetal/static/js/main.69627bd9.js.map",
+    "787.34beabac.chunk.js.map": "/esteemetal/static/js/787.34beabac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f1c17af.css",
+    "static/js/main.69627bd9.js"
+  ]
+}
